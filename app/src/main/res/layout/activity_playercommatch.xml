@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Playercommatch">
+
+    <TextView
+        android:id="@+id/thisball_score"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="31sp"
+        app:layout_constraintEnd_toStartOf="@+id/helpbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/com_name"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="Willie"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/com_score"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thisball_score" />
+
+    <TextView
+        android:id="@+id/com_score"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="31sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thisball_score" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/matchresult"
+        app:layout_constraintEnd_toStartOf="@+id/player_score"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/com_name"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="31sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/com_score" />
+
+    <TextView
+        android:id="@+id/matchresult"
+        android:layout_width="251dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="144dp"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_score"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/playball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Flip Page"
+        app:layout_constraintBottom_toTopOf="@+id/matchresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_score"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <ImageButton
+        android:id="@+id/helpbutton"
+        android:layout_width="41dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/com_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/scorethisball"
+        android:layout_width="92dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Score this ball"
+        android:textColor="#ff000000"
+        app:layout_constraintBottom_toTopOf="@+id/com_name"
+        app:layout_constraintEnd_toStartOf="@+id/thisball_score"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+</android.support.constraint.ConstraintLayout>
